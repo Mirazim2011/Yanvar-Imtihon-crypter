@@ -1,0 +1,148 @@
+.form-label {
+  display: flex;
+  align-items: center;
+}
+.form-span-input-control {
+  position: relative;
+  display: inline-block;
+  padding: 8px;
+  border: 2px solid #202025;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.form-span-input-control::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  display: none;
+  background-image: url("../../images/check-galochka.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+.form-input:checked + .form-span-input-control::before {
+  display: block;
+  background-color: $main-color;
+  border-radius: 50%;
+}
+.hero__inner-left-item:nth-child(1) {
+  border-radius: 4px;
+  border: 2px solid #1966f7;
+}
+.hero__inner-left-item:nth-child(2) {
+  border-radius: 4px;
+  border: 2px solid #e1e2e2;
+}
+.hero__inner-left-item:nth-child(3) {
+  border-radius: 4px;
+  border: 2px solid #e1e2e2;
+}
+.hero__inner-left-item:nth-child(4) {
+  border-radius: 4px;
+  border: 2px solid #1966f7;
+}
+.form-span {
+  color: $main-color;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.16px;
+}
+.form-span:checked + .form-span-input-control::before {
+  display: block;
+  background-color: $main-color;
+  border-radius: 50%;
+}
+.hero__inner {
+  display: flex;
+  flex-direction: row;
+  padding-left: 24px;
+  gap: 40px;
+}
+.hero__inner-left {
+}
+.hero__inner-left-heading {
+  color: $main-color;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 134%;
+  letter-spacing: -0.48px;
+  margin-bottom: 32px;
+}
+.hero__inner-left-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.form-span {
+  display: inline-block;
+}
+.hero__inner-left-item {
+  padding: 18px 24px;
+}
+.hero__inner-right {
+}
+.hero__inner-right-heading {
+  color: $main-color;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 134%;
+  letter-spacing: -0.48px;
+  margin-bottom: 32px;
+}
+.hero__inner-right-list {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  gap: 16px;
+}
+.form-right-span {
+  color: $main-color;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200%;
+  letter-spacing: -0.18px;
+}
+.hero__inner-right-item {
+  padding: 12px 86px;
+}
+.hero__inner-right-item:nth-child(1) {
+  border-radius: 4px;
+  border: 2px solid var(--Neutral-03, #e1e2e2);
+}
+.hero__inner-right-item:nth-child(2) {
+  border-radius: 4px;
+  border: 2px solid var(--Neutral-03, #e1e2e2);
+}
+.hero__inner-right-item:nth-child(3) {
+  border-radius: 4px;
+  background: var(--Neutral-07, #202025);
+}
+.hero__inner-right-item:nth-child(3) .form-right-span {
+  display: inline-block;
+  color: #f7fbfa;
+  text-transform: uppercase;
+  padding: 8px 36px;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 200%;
+  letter-spacing: 2.04px;
+  font-weight: 800;
+}
+.hero__inner-right-item:nth-child(2) .form-right-span {
+  display: inline-block;
+  color: #a6aead;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200%;
+  letter-spacing: -0.18px;
+}
