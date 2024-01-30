@@ -11,9 +11,8 @@
   text-decoration: none;
   display: inline-block;
 }
-.site-header__inner-logo-img {
-  width: 164px;
-  height: 40px;
+.site-header__inner-logo-link .site-header__inner-logo-img:nth-child(2) {
+  display: none;
 }
 .site-header__inner-list {
   display: flex;
@@ -34,7 +33,24 @@
   text-decoration: none;
   display: inline-block;
 }
+.site-header__inner-item:nth-child(1) {
+  display: none;
+  border-radius: 4px;
+  border: 2px solid $main-color;
+  padding: 12px 32px;
+}
+.site-header__inner-item:nth-child(2) {
+  display: none;
+}
 .site-header__inner-item:nth-child(3) {
+  display: none;
+}
+.site-header__inner-item:nth-child(1) .site-header__inner-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.site-header__inner-item:nth-child(6) {
   border-radius: 4px;
   border: 2px solid $main-border;
   padding: 12px 32px;
@@ -48,4 +64,64 @@
   height: 12px;
 }
 @media only screen and (max-width: 1024px) {
+  .site-header__inner-item:nth-child(1) {
+    display: block;
+  }
+  .site-header__inner-item:nth-child(2) {
+    display: block;
+  }
+  .site-header__inner-item:nth-child(3) {
+    display: block;
+  }
+  .site-header__inner-item:nth-child(4) {
+    display: none;
+  }
+  .site-header__inner-item:nth-child(5) {
+    display: none;
+  }
+  .site-header__inner-item:nth-child(6) {
+    display: none;
+  }
+  .site-header__inner {
+    border-bottom: none;
+  }
+  .site-header__inner-item-link .site-header__inner-item-link-img:nth-child(1) {
+    margin-left: 8px;
+  }
+  .site-header__inner-list {
+    gap: 48px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .site-header__inner-list {
+    gap: 40px;
+  }
+  .site-header__inner-item:nth-child(1) {
+    padding: 10px 25px;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .site-header__inner-list {
+    gap: 15px;
+  }
+  .site-header__inner-item:nth-child(1) {
+    padding: 6px 15px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .site-header__inner {
+    padding: 24px 0;
+  }
+  .site-header__inner-list {
+    gap: 32px;
+  }
+  .site-header__inner-logo-link .site-header__inner-logo-img:nth-child(1) {
+    display: none;
+  }
+  .site-header__inner-logo-link .site-header__inner-logo-img:nth-child(2) {
+    display: block;
+  }
+  .site-header__inner-item:nth-child(1) {
+    display: none;
+  }
 }
